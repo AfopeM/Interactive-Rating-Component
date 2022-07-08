@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="card">
+        <!-- Rating state start -->
+        <div class="start-state">
+          <img src="images/icon-star.svg" alt="icon-star" />
+
+          <h1>How did we do?</h1>
+
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <ul>
+            <li id="rating-1" class="rating">1</li>
+            <li id="rating-2" class="rating">2</li>
+            <li id="rating-3" class="rating">3</li>
+            <li id="rating-4" class="rating">4</li>
+            <li id="rating-5" class="rating">5</li>
+          </ul>
+
+          <button class="btn">Submit</button>
+          <!-- Rating state end -->
+        </div>
+
+        <div class="end-state hidden">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="illustration-thank-you"
+          />
+          <!-- Add rating here -->
+          <p id="result">
+            You selected <span id="picked-rating">1</span> out of 5
+          </p>
+          <!-- Thank you state end -->
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give arating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
